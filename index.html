@@ -292,79 +292,60 @@
     </header>
 <main>
 
-  <section class="relative overflow-hidden bg-background min-h-[80vh] flex flex-col justify-center pb-12 lg:pb-28 w-full">
-    <!-- Background soft shape -->
-    <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full opacity-[0.06]" style="background: var(--color-accent);"></div>
-      <div class="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full opacity-[0.04]" style="background: var(--color-accent-light);"></div>
-    </div>
+  <!-- ══════════════════════════════════════════════
+       SECTION 1 · HERO — FULL-WIDTH BACKGROUND IMAGE
+       ══════════════════════════════════════════════ -->
+  <section class="relative overflow-hidden min-h-[85vh] lg:min-h-[90vh] flex items-center w-full bg-cover bg-center bg-no-repeat m-0 p-0" style="background-image: url('assets/a1.jpg');">
+    <!-- Seamless Gradient Overlay to ensure crisp contrast and zero gap -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/75 to-black/45 dark:from-black/95 dark:via-black/80 dark:to-black/60"></div>
 
-    <div class="relative w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28">
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div class="relative w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-32">
+      <div class="max-w-2xl text-center lg:text-start space-y-6 lg:space-y-8">
 
-        <!-- Left: Text -->
-        <div class="text-center lg:text-start space-y-6 lg:space-y-8 order-2 lg:order-1">
-          <div class="inline-flex items-center gap-2 bg-hover border border-border rounded-full px-5 py-2 text-sm font-semibold text-accent">
-            <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-            Trusted by 25,000+ happy owners
-          </div>
-
-          <h1 class="text-primary-text leading-[1.1]">
-            Find Your Perfect
-            <span class="text-accent">Certified</span>
-            Used Car
-          </h1>
-
-          <p class="text-secondary-text text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed">
-            Every vehicle undergoes a 200-point inspection. Buy with confidence,
-            sell with ease, and manage everything from your personal dashboard.
-          </p>
-
-          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a href="buy.html" class="btn-primary px-8 py-3.5 rounded-full font-bold text-sm inline-flex items-center justify-center gap-2 shadow-lg shadow-accent/25">
-              <i class="fa-solid fa-car"></i> Browse Cars
-            </a>
-            <a href="sell.html" class="btn-outline px-8 py-3.5 rounded-full font-bold text-sm inline-flex items-center justify-center gap-2">
-              <i class="fa-solid fa-tag"></i> Sell Your Car
-            </a>
-          </div>
-
-          <!-- Trust badges -->
-          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-4">
-            <div class="flex items-center gap-2 text-sm text-secondary-text">
-              <i class="fa-solid fa-shield-halved text-accent"></i>
-              <span>200-Point Inspection</span>
-            </div>
-            <div class="flex items-center gap-2 text-sm text-secondary-text">
-              <i class="fa-solid fa-rotate-left text-accent"></i>
-              <span>7-Day Return</span>
-            </div>
-            <div class="flex items-center gap-2 text-sm text-secondary-text">
-              <i class="fa-solid fa-file-shield text-accent"></i>
-              <span>Verified History</span>
-            </div>
-          </div>
+        <!-- Trust pill badge -->
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 text-sm font-semibold text-white">
+          <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+          Trusted by 25,000+ happy owners
         </div>
 
-        <!-- Right: Image -->
-        <div class="order-1 lg:order-2 relative">
-          <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-border/60">
-            <img
-              src="assets/a1.jpg"
-              alt="Certified used car in showroom"
-              class="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
-              loading="eager"
-            />
-            <!-- Floating stat card -->
-            <div class="absolute bottom-4 start-4 end-4 sm:end-auto sm:start-6 bg-background backdrop-blur-md rounded-2xl p-4 shadow-xl border border-border/60 flex items-center gap-4 sm:max-w-xs">
-              <div class="w-12 h-12 rounded-xl bg-custom-gradient flex items-center justify-center text-white shrink-0">
-                <i class="fa-solid fa-star text-lg"></i>
-              </div>
-              <div>
-                <p class="text-primary-text font-bold text-sm">4.9 / 5.0 Rating</p>
-                <p class="text-secondary-text text-xs">From 12,400+ verified reviews</p>
-              </div>
-            </div>
+        <h1 class="text-white leading-[1.1] text-4xl sm:text-5xl lg:text-6xl font-bold">
+          Find Your Perfect
+          <span class="text-accent">Certified</span>
+          Used Car
+        </h1>
+
+        <p class="text-gray-200 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
+          Every vehicle undergoes a 200-point inspection. Buy with confidence,
+          sell with ease, and manage everything from your personal dashboard.
+        </p>
+
+        <!-- Call to actions -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <a href="buy.html" class="btn-primary px-8 py-3.5 rounded-full font-bold text-sm inline-flex items-center justify-center gap-2 shadow-lg shadow-accent/25">
+            <i class="fa-solid fa-car"></i> Browse Cars
+          </a>
+          <a href="sell.html" class="px-8 py-3.5 rounded-full font-bold text-sm inline-flex items-center justify-center gap-2 text-white border-2 border-white/80 hover:bg-white hover:text-black transition-all duration-300">
+            <i class="fa-solid fa-tag"></i> Sell Your Car
+          </a>
+        </div>
+
+        <!-- Trust badges -->
+        <div class="pt-6 border-t border-white/20 flex flex-wrap items-center justify-center lg:justify-start gap-6">
+          <div class="flex items-center gap-2 text-sm text-gray-200">
+            <i class="fa-solid fa-shield-halved text-accent text-base"></i>
+            <span>200-Point Inspection</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-gray-200">
+            <i class="fa-solid fa-rotate-left text-accent text-base"></i>
+            <span>7-Day Return</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-gray-200">
+            <i class="fa-solid fa-file-shield text-accent text-base"></i>
+            <span>Verified History</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-amber-400 font-semibold">
+            <i class="fa-solid fa-star"></i>
+            <span>4.9 / 5.0 (12.4k+ Reviews)</span>
           </div>
         </div>
 
@@ -504,37 +485,70 @@
 
       </div>
 
-      <!-- 3 Compact Feature Cards -->
+      <!-- 3 Visual Feature Cards with Real Car Images -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
 
-        <div class="bg-hover/50 rounded-2xl border border-border/60 p-6 text-center space-y-3 shadow-sm hover:shadow-lg transition-all duration-300">
-          <div class="w-14 h-14 rounded-2xl bg-custom-gradient flex items-center justify-center text-white mx-auto">
-            <i class="fa-solid fa-shield-halved text-2xl"></i>
+        <div class="group bg-hover/50 rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <div class="relative h-44 w-full overflow-hidden">
+            <img src="assets/ft3.jpg" alt="Verified Ownership Records" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            <span class="absolute top-3 start-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+              Verified
+            </span>
           </div>
-          <h3 class="text-primary-text">Verified Ownership</h3>
-          <p class="text-secondary-text text-sm leading-relaxed">
-            Complete service history and ownership records for every listing.
-          </p>
+          <div class="p-5 text-center space-y-2 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-primary-text font-bold text-base">Verified Ownership</h3>
+              <p class="text-secondary-text text-xs leading-relaxed mt-1">
+                Complete service history and single-owner certification records for every listing.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-accent inline-flex items-center justify-center gap-1 pt-2">
+              <i class="fa-solid fa-check"></i> 100% Title Checked
+            </span>
+          </div>
         </div>
 
-        <div class="bg-hover/50 rounded-2xl border border-border/60 p-6 text-center space-y-3 shadow-sm hover:shadow-lg transition-all duration-300">
-          <div class="w-14 h-14 rounded-2xl bg-custom-gradient flex items-center justify-center text-white mx-auto">
-            <i class="fa-solid fa-gauge-high text-2xl"></i>
+        <div class="group bg-hover/50 rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <div class="relative h-44 w-full overflow-hidden">
+            <img src="assets/gg.jpg" alt="Dashboard Live Tracking" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            <span class="absolute top-3 start-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+              Real-Time
+            </span>
           </div>
-          <h3 class="text-primary-text">Dashboard Tracking</h3>
-          <p class="text-secondary-text text-sm leading-relaxed">
-            Buyers and sellers get a personal dashboard to track inquiries and listings.
-          </p>
+          <div class="p-5 text-center space-y-2 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-primary-text font-bold text-base">Dashboard Tracking</h3>
+              <p class="text-secondary-text text-xs leading-relaxed mt-1">
+                Buyers and sellers get a personalized dashboard to track inquiries, test drives, and listings.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-accent inline-flex items-center justify-center gap-1 pt-2">
+              <i class="fa-solid fa-check"></i> Live Status Updates
+            </span>
+          </div>
         </div>
 
-        <div class="bg-hover/50 rounded-2xl border border-border/60 p-6 text-center space-y-3 shadow-sm hover:shadow-lg transition-all duration-300">
-          <div class="w-14 h-14 rounded-2xl bg-custom-gradient flex items-center justify-center text-white mx-auto">
-            <i class="fa-solid fa-headset text-2xl"></i>
+        <div class="group bg-hover/50 rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <div class="relative h-44 w-full overflow-hidden">
+            <img src="assets/ft4.jpg" alt="24/7 Dedicated Support" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            <span class="absolute top-3 start-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+              24/7 Active
+            </span>
           </div>
-          <h3 class="text-primary-text">24/7 Support</h3>
-          <p class="text-secondary-text text-sm leading-relaxed">
-            Dedicated support team to help with paperwork, finance, and delivery.
-          </p>
+          <div class="p-5 text-center space-y-2 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-primary-text font-bold text-base">24/7 Support</h3>
+              <p class="text-secondary-text text-xs leading-relaxed mt-1">
+                Dedicated automotive support team to assist with test drives, paperwork, financing, and delivery.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-accent inline-flex items-center justify-center gap-1 pt-2">
+              <i class="fa-solid fa-check"></i> Always Available
+            </span>
+          </div>
         </div>
 
       </div>
@@ -544,7 +558,7 @@
 
 
   <!-- ══════════════════════════════════════════════
-       SECTION 4 · HOW IT WORKS — PROCESS
+       SECTION 4 · HOW IT WORKS — SIMPLE PROCESS
        ══════════════════════════════════════════════ -->
   <section class="bg-hover/40 border-y border-border/50">
     <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
@@ -555,66 +569,194 @@
         <h2 class="text-primary-text">How It Works</h2>
         <p class="text-secondary-text leading-relaxed">
           Whether you're buying or selling, we've made the process transparent,
-          fast, and completely stress-free.
+          fast, and completely stress-free with step-by-step guidance.
         </p>
       </div>
 
-      <!-- Process Steps -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6 lg:gap-8 pt-4">
+      <!-- Process Steps with Relevant Visuals & Featured Car Details -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 pt-4">
 
-        <!-- Step 1 -->
-        <div class="relative bg-background rounded-2xl border border-border/60 p-6 text-center shadow-sm hover:shadow-lg transition-all duration-300">
-          <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-custom-gradient text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-accent/30">1</div>
-          <div class="pt-6 space-y-3">
-            <div class="w-16 h-16 rounded-2xl bg-hover flex items-center justify-center mx-auto">
-              <i class="fa-solid fa-magnifying-glass text-accent text-2xl"></i>
+        <!-- Step 1: Browse & Compare -->
+        <div class="group relative bg-background rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="relative h-48 w-full overflow-hidden">
+            <img src="assets/b2.jpg" alt="Browse Honda Civic Sedan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent"></div>
+            <!-- Step Badge -->
+            <div class="absolute top-3 start-3 w-9 h-9 rounded-full bg-custom-gradient text-white flex items-center justify-center font-bold text-sm shadow-lg shadow-accent/40">1</div>
+            <!-- Price pill -->
+            <div class="absolute top-3 end-3 bg-black/60 backdrop-blur-md text-white border border-white/20 text-xs font-bold px-2.5 py-1 rounded-full">
+              $18,900
             </div>
-            <h3 class="text-primary-text">Browse & Compare</h3>
-            <p class="text-secondary-text text-sm leading-relaxed">
-              Filter by budget, brand, fuel type, and location to find your ideal car.
-            </p>
+            <!-- Car Title on visual -->
+            <div class="absolute bottom-2.5 start-3 end-3 text-start">
+              <span class="inline-block text-[11px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-accent/90 text-white mb-0.5 shadow-sm">Sedan • 2022</span>
+              <p class="text-white font-bold text-sm truncate">Honda Civic EX</p>
+            </div>
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-primary-text text-lg font-bold">1. Browse & Compare</h3>
+              <p class="text-secondary-text text-xs leading-relaxed mt-1">
+                Filter by budget, brand, fuel type, and body style to find your ideal certified match.
+              </p>
+            </div>
+            <!-- Car Listing Key Details Box -->
+            <div class="bg-hover/70 rounded-xl p-3 border border-border/60 space-y-2 text-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-secondary-text">Brand & Model:</span>
+                <span class="font-bold text-primary-text">Honda Civic EX</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-secondary-text">Year / Fuel:</span>
+                <span class="font-medium text-primary-text">2022 • Petrol</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-secondary-text">Mileage / Trans:</span>
+                <span class="font-medium text-primary-text">18,500 km • Auto</span>
+              </div>
+              <div class="flex items-center justify-between pt-1 border-t border-border/50">
+                <span class="text-secondary-text">Verified Price:</span>
+                <span class="font-bold text-accent text-sm">$18,900</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Step 2 -->
-        <div class="relative bg-background rounded-2xl border border-border/60 p-6 text-center shadow-sm hover:shadow-lg transition-all duration-300">
-          <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-custom-gradient text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-accent/30">2</div>
-          <div class="pt-6 space-y-3">
-            <div class="w-16 h-16 rounded-2xl bg-hover flex items-center justify-center mx-auto">
-              <i class="fa-solid fa-file-invoice text-accent text-2xl"></i>
+        <!-- Step 2: Review Inspection Report -->
+        <div class="group relative bg-background rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="relative h-48 w-full overflow-hidden">
+            <img src="assets/b3.jpg" alt="Inspect BMW X5 SUV" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent"></div>
+            <!-- Step Badge -->
+            <div class="absolute top-3 start-3 w-9 h-9 rounded-full bg-custom-gradient text-white flex items-center justify-center font-bold text-sm shadow-lg shadow-accent/40">2</div>
+            <!-- Price pill -->
+            <div class="absolute top-3 end-3 bg-black/60 backdrop-blur-md text-white border border-white/20 text-xs font-bold px-2.5 py-1 rounded-full">
+              $42,300
             </div>
-            <h3 class="text-primary-text">Review Report</h3>
-            <p class="text-secondary-text text-sm leading-relaxed">
-              Access the full inspection report, service history, and ownership details.
-            </p>
+            <!-- Car Title on visual -->
+            <div class="absolute bottom-2.5 start-3 end-3 text-start">
+              <span class="inline-block text-[11px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-accent/90 text-white mb-0.5 shadow-sm">Luxury SUV • 2021</span>
+              <p class="text-white font-bold text-sm truncate">BMW X5 xDrive40i</p>
+            </div>
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-primary-text text-lg font-bold">2. Review Report</h3>
+              <p class="text-secondary-text text-xs leading-relaxed mt-1">
+                Access full 200-point inspection results, service records, and accident-free history.
+              </p>
+            </div>
+            <!-- Car Listing Key Details Box -->
+            <div class="bg-hover/70 rounded-xl p-3 border border-border/60 space-y-2 text-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-secondary-text">Brand & Model:</span>
+                <span class="font-bold text-primary-text">BMW X5 xDrive</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-secondary-text">Year / Fuel:</span>
+                <span class="font-medium text-primary-text">2021 • Diesel</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-secondary-text">Mileage / Trans:</span>
+                <span class="font-medium text-primary-text">24,800 km • AWD</span>
+              </div>
+              <div class="flex items-center justify-between pt-1 border-t border-border/50">
+                <span class="text-secondary-text">Verified Price:</span>
+                <span class="font-bold text-accent text-sm">$42,300</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Step 3 -->
-        <div class="relative bg-background rounded-2xl border border-border/60 p-6 text-center shadow-sm hover:shadow-lg transition-all duration-300">
-          <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-custom-gradient text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-accent/30">3</div>
-          <div class="pt-6 space-y-3">
-            <div class="w-16 h-16 rounded-2xl bg-hover flex items-center justify-center mx-auto">
-              <i class="fa-solid fa-handshake text-accent text-2xl"></i>
+        <!-- Step 3: Book Test Drive -->
+        <div class="group relative bg-background rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="relative h-48 w-full overflow-hidden">
+            <img src="assets/b4.jpg" alt="Test drive Toyota Camry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent"></div>
+            <!-- Step Badge -->
+            <div class="absolute top-3 start-3 w-9 h-9 rounded-full bg-custom-gradient text-white flex items-center justify-center font-bold text-sm shadow-lg shadow-accent/40">3</div>
+            <!-- Price pill -->
+            <div class="absolute top-3 end-3 bg-black/60 backdrop-blur-md text-white border border-white/20 text-xs font-bold px-2.5 py-1 rounded-full">
+              $26,500
             </div>
-            <h3 class="text-primary-text">Book Test Drive</h3>
-            <p class="text-secondary-text text-sm leading-relaxed">
-              Schedule a test drive at your nearest hub or get it delivered to your door.
-            </p>
+            <!-- Car Title on visual -->
+            <div class="absolute bottom-2.5 start-3 end-3 text-start">
+              <span class="inline-block text-[11px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-accent/90 text-white mb-0.5 shadow-sm">Hybrid • 2023</span>
+              <p class="text-white font-bold text-sm truncate">Toyota Camry XSE</p>
+            </div>
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-primary-text text-lg font-bold">3. Book Test Drive</h3>
+              <p class="text-secondary-text text-xs leading-relaxed mt-1">
+                Schedule an effortless test drive at your nearest Spinny Hub or right at your doorstep.
+              </p>
+            </div>
+            <!-- Car Listing Key Details Box -->
+            <div class="bg-hover/70 rounded-xl p-3 border border-border/60 space-y-2 text-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-secondary-text">Brand & Model:</span>
+                <span class="font-bold text-primary-text">Toyota Camry XSE</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-secondary-text">Year / Fuel:</span>
+                <span class="font-medium text-primary-text">2023 • Hybrid</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-secondary-text">Mileage / Trans:</span>
+                <span class="font-medium text-primary-text">9,200 km • e-CVT</span>
+              </div>
+              <div class="flex items-center justify-between pt-1 border-t border-border/50">
+                <span class="text-secondary-text">Verified Price:</span>
+                <span class="font-bold text-accent text-sm">$26,500</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Step 4 -->
-        <div class="relative bg-background rounded-2xl border border-border/60 p-6 text-center shadow-sm hover:shadow-lg transition-all duration-300">
-          <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-custom-gradient text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-accent/30">4</div>
-          <div class="pt-6 space-y-3">
-            <div class="w-16 h-16 rounded-2xl bg-hover flex items-center justify-center mx-auto">
-              <i class="fa-solid fa-key text-accent text-2xl"></i>
+        <!-- Step 4: Drive Home with Warranty -->
+        <div class="group relative bg-background rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div class="relative h-48 w-full overflow-hidden">
+            <img src="assets/b5.jpg" alt="Drive home Tesla Model 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent"></div>
+            <!-- Step Badge -->
+            <div class="absolute top-3 start-3 w-9 h-9 rounded-full bg-custom-gradient text-white flex items-center justify-center font-bold text-sm shadow-lg shadow-accent/40">4</div>
+            <!-- Price pill -->
+            <div class="absolute top-3 end-3 bg-black/60 backdrop-blur-md text-white border border-white/20 text-xs font-bold px-2.5 py-1 rounded-full">
+              $33,800
             </div>
-            <h3 class="text-primary-text">Drive Home</h3>
-            <p class="text-secondary-text text-sm leading-relaxed">
-              Complete secure payment and drive away with a 7-day return guarantee.
-            </p>
+            <!-- Car Title on visual -->
+            <div class="absolute bottom-2.5 start-3 end-3 text-start">
+              <span class="inline-block text-[11px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-accent/90 text-white mb-0.5 shadow-sm">EV • 2023</span>
+              <p class="text-white font-bold text-sm truncate">Tesla Model 3 Long Range</p>
+            </div>
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-primary-text text-lg font-bold">4. Drive Home</h3>
+              <p class="text-secondary-text text-xs leading-relaxed mt-1">
+                Complete secure digital paperless payment and enjoy our 7-day money-back guarantee.
+              </p>
+            </div>
+            <!-- Car Listing Key Details Box -->
+            <div class="bg-hover/70 rounded-xl p-3 border border-border/60 space-y-2 text-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-secondary-text">Brand & Model:</span>
+                <span class="font-bold text-primary-text">Tesla Model 3 LR</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-secondary-text">Year / Fuel:</span>
+                <span class="font-medium text-primary-text">2023 • Electric</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-secondary-text">Mileage / Trans:</span>
+                <span class="font-medium text-primary-text">12,100 km • Auto</span>
+              </div>
+              <div class="flex items-center justify-between pt-1 border-t border-border/50">
+                <span class="text-secondary-text">Verified Price:</span>
+                <span class="font-bold text-accent text-sm">$33,800</span>
+              </div>
+            </div>
           </div>
         </div>
 

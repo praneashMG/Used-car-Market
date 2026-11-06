@@ -293,41 +293,39 @@
 <main>
 
   <!-- ══════════════════════════════════════════════
-       SECTION 1 · HERO — BROWSE & SEARCH
+       SECTION 1 · HERO — BROWSE & SEARCH (FULL BACKGROUND)
        ══════════════════════════════════════════════ -->
-  <section class="relative overflow-hidden bg-background min-h-[80vh] flex flex-col justify-center pb-12 lg:pb-28 w-full">
-    <!-- Decorative orbs -->
-    <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute -top-24 -end-24 w-[420px] h-[420px] rounded-full blur-3xl opacity-[0.07]" style="background: var(--color-accent);"></div>
-      <div class="absolute bottom-0 -start-24 w-[400px] h-[400px] rounded-full blur-3xl opacity-[0.05]" style="background: var(--color-accent-light);"></div>
-    </div>
+  <section class="relative overflow-hidden min-h-[75vh] lg:min-h-[82vh] flex items-center justify-center w-full bg-cover bg-center bg-no-repeat m-0 p-0" style="background-image: url('assets/b1.jpg');">
+    <!-- Dark Backdrop Gradient Overlay for optimal contrast -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/85 via-black/75 to-black/90"></div>
 
-    <div class="relative w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24">
+    <div class="relative w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
       <div class="max-w-3xl mx-auto text-center space-y-6 lg:space-y-8">
 
-        <div class="inline-flex items-center gap-2 bg-hover border border-border rounded-full px-5 py-2 text-sm font-semibold text-accent">
-          <i class="fa-solid fa-car"></i>
+        <!-- Trust badge -->
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 text-sm font-semibold text-white">
+          <i class="fa-solid fa-car text-accent"></i>
           12,400+ Certified Cars Available
         </div>
 
-        <h1 class="text-primary-text leading-[1.1]">
+        <h1 class="text-white leading-[1.1] text-4xl sm:text-5xl lg:text-6xl font-bold">
           Find Your Next Car,
           <span class="text-accent">Certified & Ready</span>
         </h1>
 
-        <p class="text-secondary-text text-base sm:text-lg leading-relaxed max-w-xl mx-auto">
+        <p class="text-gray-200 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-normal">
           Filter by brand, budget, fuel type, and location. Every listing comes
           with a 200-point inspection report and a 7-day return guarantee.
         </p>
 
-        <!-- Search Bar -->
-        <div class="bg-hover/60 border border-border/60 rounded-2xl p-3 sm:p-4 shadow-lg max-w-2xl mx-auto">
+        <!-- Search Bar with translucent glass styling -->
+        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3 sm:p-4 shadow-2xl max-w-2xl mx-auto">
           <div class="flex flex-col sm:flex-row gap-3">
-            <div class="flex-1 flex items-center gap-3 bg-background rounded-xl px-4 py-3 border border-border/50">
+            <div class="flex-1 flex items-center gap-3 bg-white/90 rounded-xl px-4 py-3 border border-white/30 text-primary-text">
               <i class="fa-solid fa-magnifying-glass text-accent"></i>
-              <input type="text" placeholder="Search by brand, model, or keyword..." class="flex-1 bg-transparent outline-none text-primary-text text-sm placeholder:text-secondary-text" />
+              <input type="text" placeholder="Search by brand, model, or keyword..." class="flex-1 bg-transparent outline-none text-gray-900 text-sm placeholder:text-gray-500 font-medium" />
             </div>
-            <button class="btn-primary px-6 py-3 rounded-xl font-bold text-sm inline-flex items-center justify-center gap-2 shadow-md">
+            <button class="btn-primary px-7 py-3 rounded-xl font-bold text-sm inline-flex items-center justify-center gap-2 shadow-lg shadow-accent/30">
               <i class="fa-solid fa-sliders"></i> Search
             </button>
           </div>
@@ -335,11 +333,11 @@
 
         <!-- Quick filter pills -->
         <div class="flex flex-wrap items-center justify-center gap-2 pt-2">
-          <span class="text-secondary-text text-sm me-2">Popular:</span>
-          <a href="#listings" class="bg-background border border-border/60 hover:border-accent hover:text-accent text-secondary-text text-xs font-semibold px-4 py-2 rounded-full transition-all duration-200">SUV</a>
-          <a href="#listings" class="bg-background border border-border/60 hover:border-accent hover:text-accent text-secondary-text text-xs font-semibold px-4 py-2 rounded-full transition-all duration-200">Sedan</a>
-          <a href="#listings" class="bg-background border border-border/60 hover:border-accent hover:text-accent text-secondary-text text-xs font-semibold px-4 py-2 rounded-full transition-all duration-200">Electric</a>
-          <a href="#listings" class="bg-background border border-border/60 hover:border-accent hover:text-accent text-secondary-text text-xs font-semibold px-4 py-2 rounded-full transition-all duration-200">Under $15K</a>
+          <span class="text-gray-300 text-sm me-2">Popular:</span>
+          <a href="#listings" class="bg-white/15 backdrop-blur-sm border border-white/25 hover:bg-accent hover:border-accent text-white text-xs font-semibold px-4 py-2 rounded-full transition-all duration-200">SUV</a>
+          <a href="#listings" class="bg-white/15 backdrop-blur-sm border border-white/25 hover:bg-accent hover:border-accent text-white text-xs font-semibold px-4 py-2 rounded-full transition-all duration-200">Sedan</a>
+          <a href="#listings" class="bg-white/15 backdrop-blur-sm border border-white/25 hover:bg-accent hover:border-accent text-white text-xs font-semibold px-4 py-2 rounded-full transition-all duration-200">Electric</a>
+          <a href="#listings" class="bg-white/15 backdrop-blur-sm border border-white/25 hover:bg-accent hover:border-accent text-white text-xs font-semibold px-4 py-2 rounded-full transition-all duration-200">Under $15K</a>
         </div>
 
       </div>
@@ -363,61 +361,79 @@
         </p>
       </div>
 
-      <!-- Body Type Grid -->
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <!-- Body Type Grid with Real Relevant Car Images -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-5">
 
         <!-- Hatchback -->
-        <a href="#listings" class="group bg-background rounded-2xl border border-border/60 p-5 text-center space-y-3 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/40 transition-all duration-300">
-          <div class="w-14 h-14 rounded-2xl bg-hover flex items-center justify-center mx-auto group-hover:bg-gradient-to-br group-hover:from-accent group-hover:to-accent-light transition-all duration-300">
-            <i class="fa-solid fa-car-side text-accent text-2xl group-hover:text-white transition-colors duration-300"></i>
+        <a href="#listings" class="group bg-background rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/40 transition-all duration-300 flex flex-col">
+          <div class="relative h-28 w-full overflow-hidden">
+            <img src="assets/h1.jpg" alt="Hatchback Cars" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           </div>
-          <p class="text-primary-text font-semibold text-sm">Hatchback</p>
-          <p class="text-secondary-text text-xs">182 cars</p>
+          <div class="p-4 text-center">
+            <p class="text-primary-text font-bold text-sm group-hover:text-accent transition-colors">Hatchback</p>
+            <p class="text-secondary-text text-xs mt-0.5">182 cars</p>
+          </div>
         </a>
 
         <!-- Sedan -->
-        <a href="#listings" class="group bg-background rounded-2xl border border-border/60 p-5 text-center space-y-3 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/40 transition-all duration-300">
-          <div class="w-14 h-14 rounded-2xl bg-hover flex items-center justify-center mx-auto group-hover:bg-gradient-to-br group-hover:from-accent group-hover:to-accent-light transition-all duration-300">
-            <i class="fa-solid fa-car text-accent text-2xl group-hover:text-white transition-colors duration-300"></i>
+        <a href="#listings" class="group bg-background rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/40 transition-all duration-300 flex flex-col">
+          <div class="relative h-28 w-full overflow-hidden">
+            <img src="assets/a2.jpg" alt="Sedan Cars" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           </div>
-          <p class="text-primary-text font-semibold text-sm">Sedan</p>
-          <p class="text-secondary-text text-xs">142 cars</p>
+          <div class="p-4 text-center">
+            <p class="text-primary-text font-bold text-sm group-hover:text-accent transition-colors">Sedan</p>
+            <p class="text-secondary-text text-xs mt-0.5">142 cars</p>
+          </div>
         </a>
 
         <!-- SUV -->
-        <a href="#listings" class="group bg-background rounded-2xl border border-border/60 p-5 text-center space-y-3 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/40 transition-all duration-300">
-          <div class="w-14 h-14 rounded-2xl bg-hover flex items-center justify-center mx-auto group-hover:bg-gradient-to-br group-hover:from-accent group-hover:to-accent-light transition-all duration-300">
-            <i class="fa-solid fa-truck-monster text-accent text-2xl group-hover:text-white transition-colors duration-300"></i>
+        <a href="#listings" class="group bg-background rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/40 transition-all duration-300 flex flex-col">
+          <div class="relative h-28 w-full overflow-hidden">
+            <img src="assets/a3.jpg" alt="SUV Cars" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           </div>
-          <p class="text-primary-text font-semibold text-sm">SUV</p>
-          <p class="text-secondary-text text-xs">98 cars</p>
+          <div class="p-4 text-center">
+            <p class="text-primary-text font-bold text-sm group-hover:text-accent transition-colors">SUV</p>
+            <p class="text-secondary-text text-xs mt-0.5">98 cars</p>
+          </div>
         </a>
 
-        <!-- MUV -->
-        <a href="#listings" class="group bg-background rounded-2xl border border-border/60 p-5 text-center space-y-3 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/40 transition-all duration-300">
-          <div class="w-14 h-14 rounded-2xl bg-hover flex items-center justify-center mx-auto group-hover:bg-gradient-to-br group-hover:from-accent group-hover:to-accent-light transition-all duration-300">
-            <i class="fa-solid fa-van-shuttle text-accent text-2xl group-hover:text-white transition-colors duration-300"></i>
+        <!-- MUV / Van -->
+        <a href="#listings" class="group bg-background rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/40 transition-all duration-300 flex flex-col">
+          <div class="relative h-28 w-full overflow-hidden">
+            <img src="assets/h2.jpg" alt="MUV Multi Utility Vehicles" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           </div>
-          <p class="text-primary-text font-semibold text-sm">MUV</p>
-          <p class="text-secondary-text text-xs">64 cars</p>
+          <div class="p-4 text-center">
+            <p class="text-primary-text font-bold text-sm group-hover:text-accent transition-colors">MUV</p>
+            <p class="text-secondary-text text-xs mt-0.5">64 cars</p>
+          </div>
         </a>
 
         <!-- Luxury -->
-        <a href="#listings" class="group bg-background rounded-2xl border border-border/60 p-5 text-center space-y-3 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/40 transition-all duration-300">
-          <div class="w-14 h-14 rounded-2xl bg-hover flex items-center justify-center mx-auto group-hover:bg-gradient-to-br group-hover:from-accent group-hover:to-accent-light transition-all duration-300">
-            <i class="fa-solid fa-gem text-accent text-2xl group-hover:text-white transition-colors duration-300"></i>
+        <a href="#listings" class="group bg-background rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/40 transition-all duration-300 flex flex-col">
+          <div class="relative h-28 w-full overflow-hidden">
+            <img src="assets/a4.jpg" alt="Luxury Cars" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           </div>
-          <p class="text-primary-text font-semibold text-sm">Luxury</p>
-          <p class="text-secondary-text text-xs">56 cars</p>
+          <div class="p-4 text-center">
+            <p class="text-primary-text font-bold text-sm group-hover:text-accent transition-colors">Luxury</p>
+            <p class="text-secondary-text text-xs mt-0.5">56 cars</p>
+          </div>
         </a>
 
         <!-- Electric -->
-        <a href="#listings" class="group bg-background rounded-2xl border border-border/60 p-5 text-center space-y-3 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/40 transition-all duration-300">
-          <div class="w-14 h-14 rounded-2xl bg-hover flex items-center justify-center mx-auto group-hover:bg-gradient-to-br group-hover:from-accent group-hover:to-accent-light transition-all duration-300">
-            <i class="fa-solid fa-bolt text-accent text-2xl group-hover:text-white transition-colors duration-300"></i>
+        <a href="#listings" class="group bg-background rounded-2xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent/40 transition-all duration-300 flex flex-col">
+          <div class="relative h-28 w-full overflow-hidden">
+            <img src="assets/a5.jpg" alt="Electric Cars" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           </div>
-          <p class="text-primary-text font-semibold text-sm">Electric</p>
-          <p class="text-secondary-text text-xs">74 cars</p>
+          <div class="p-4 text-center">
+            <p class="text-primary-text font-bold text-sm group-hover:text-accent transition-colors">Electric</p>
+            <p class="text-secondary-text text-xs mt-0.5">74 cars</p>
+          </div>
         </a>
 
       </div>
